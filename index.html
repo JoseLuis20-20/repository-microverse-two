@@ -9,10 +9,10 @@
 <body>
     <h1 id = "title">Microverse Survey</h1>
     <p id = "description">This is our trial pair programming</p>
-    <form action="" id="survey form">
-        <p> Name</p> <br> <input type="text" id="name"> <label for="name" id="name-label">Enter your name</label> 
-        <p>Email</p> <br> <input type="email" id="email"> <label for="email" id="email-label"> Enter your email</label>
-        <p>Age (optional)</p> <br> <input type="range" id="number" min="8" max="100"> <label for="number" id="number-label">Enter your age</label>
+    <form action="" id="survey-form">
+        <label for="name"> Name</label> <br> <input type="text" id="name" placeholder="Enter your name">  
+        <label for="email">Email</label> <br> <input type="email" id="email" placeholder="Enter your emal"> 
+        <label for="number">Age (optional)</label> <br> <input type="number" id="number" min="8" max="100" placeholder="Enter your age"> 
         <p>How has been the experience so far?</p> 
         <select name="dropdown" id="dropdown"> 
             <option value="0"> Good </option> 
@@ -20,6 +20,27 @@
             <option value="2"> So bad </option>
         </select>
 
+        <p>What's your programming level?</p>
+        <input type="radio" id="test1" name="pro" value="professional">
+        <label for="test1"> Professional</label>
+        <input type="radio" id="test2" name="inter" value="intermedium" checked>
+        <label for="test1"> Intermedium</label>
+        <input type="radio" id="test3" name="beg" value="beginner">
+        <label for="test1"> Beginner</label>
+
+        <p>What would you like to see improved?</p>
+        <input type="checkbox" id="testcb1" name="cb1" value="fed">
+        <label for="testcb1">Frontend developper </label>
+        <input type="checkbox" id="testcb2" name="cb2" value="bed">
+        <label for="testcb1">Backend developper </label>
+        <input type="checkbox" id="testcb3" name="cb3" value="proj">
+        <label for="testcb1">Projects </label>
+
+        <p>Do you have other subject to try?</p>
+        <textarea placeholder="Enter your comments here..." cols="30" rows="10"></textarea>
+
+        <button id="submit" type="submit" placeholder="Submit!"></button>
+        
     </form>
 </body>
 </html>
