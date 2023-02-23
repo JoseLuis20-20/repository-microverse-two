@@ -9,10 +9,10 @@
 <body>
     <h1 id = "title">Microverse Survey</h1>
     <p id = "description">This is our trial pair programming</p>
-    <form action="" id="survey form">
-        <p> Name</p> <br> <input type="text" id="name"> <label for="name" id="name-label">Enter your name</label> 
-        <p>Email</p> <br> <input type="email" id="email"> <label for="email" id="email-label"> Enter your email</label>
-        <p>Age (optional)</p> <br> <input type="range" id="number" min="8" max="100"> <label for="number" id="number-label">Enter your age</label>
+    <form action="" id="survey-form">
+        <label for="name" id="name-label"> Name</label> <br> <input type="text" id="name" placeholder="Enter your name" required> <br>  
+        <label for="email" id="email-label">Email</label> <br> <input type="email" id="email" placeholder="Enter your emal" required><br> 
+        <label for="number" id="number-label">Age (optional)</label> <br> <input type="number" id="number" min="8" max="100" placeholder="Enter your age"> <br>
         <p>How has been the experience so far?</p> 
         <select name="dropdown" id="dropdown"> 
             <option value="0"> Good </option> 
@@ -20,6 +20,27 @@
             <option value="2"> So bad </option>
         </select>
 
+        <p>What's your programming level?</p>
+        <input type="radio" id="test1" name="inter" value="professional">
+        <label for="test1"> Professional</label><br>
+        <input type="radio" id="test2" name="inter" value="intermedium" checked>
+        <label for="test1"> Intermedium</label><br>
+        <input type="radio" id="test3" name="inter" value="beginner">
+        <label for="test1"> Beginner</label><br>
+
+        <p>What would you like to see improved?</p>
+        <input type="checkbox" id="testcb1" name="cb1" value="fed">
+        <label for="testcb1">Frontend developper </label><br>
+        <input type="checkbox" id="testcb2" name="cb2" value="bed">
+        <label for="testcb1">Backend developper </label><br>
+        <input type="checkbox" id="testcb3" name="cb3" value="proj">
+        <label for="testcb1">Projects </label><br>
+
+        <p>Do you have other subject to try?</p>
+        <textarea placeholder="Enter your comments here..." cols="30" rows="10"></textarea>
+<br>
+        <input id="submit" type="submit" placeholder="Submit!"></input>
+        
     </form>
 </body>
 </html>
